@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Respaso de Nodos</title>
+</head>
+<body class="cuerpo">
+    <header class="cabecera_principal">
+        <h1>WebFerrol</h1>
+    </header>
+    <main class="principal">
+        <form id="formulario">
+            <fieldset>
+                <legend>Registro Producto</legend>
+                <ol class="campos">
+                    <li class="campo">
+                        <label for="nombre"><input type="text" id="nombre" placeholder="Nombre del producto"></label>
+                        <strong>Sólo valores alfanuméricos</strong>
+                    </li>
+                    <li class="campo">
+                        <label for="precio"><input type="text" id="precio" placeholder="Precio del producto"></label>
+                        <strong>Formato correcto: <span>13.5€</span></strong>
+                    </li>
+                </ol>
+                <input id="cargar" type="submit" value="Añadir">
+            </fieldset>
+        </form>
+        <section class="inventario">
+            <h2>Inventario</h2>
+            <table class="tabla_inventario">
+                <thead>
+                    <tr>
+                        <th scope="col">Producto</th>
+                        <th scope="col">Precio</th>
+                    </tr>                    
+                </thead>
+                <tbody id="tbody">
+                    <!-- tus tr aquí -->
+                </tbody>            
+                <tfoot>
+                    <tr>
+                        <th colspan="2">No incluye I.V.A</th>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

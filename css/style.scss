@@ -1,0 +1,124 @@
+:root{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(to right,rgb(161, 67, 173),rgb(36, 6, 49));
+}
+
+input{
+    border-style: none;
+    min-height: 1.8rem;
+    outline: none;
+}
+
+ol{
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.cuerpo{
+    fieldset{
+        margin: 0;
+        padding: 0;
+        border-style: none;
+        legend{
+            padding: 0;
+            font-weight: bold;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+    }
+    .cabecera_principal{
+        h1{
+            text-align: center;
+            color: rgb(241, 239, 239);
+            &::first-letter{
+                color: transparent;
+                font-size: 8rem;
+                text-shadow: rgb(63, 22, 22) 4rem 0 .2rem;
+            }
+        }
+    }
+    #formulario, .inventario{
+        max-width: 30rem;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 1rem;
+        padding: 1em;
+        background-color: rgb(252, 248, 248);
+        border-radius: 1em;
+        box-shadow: 1rem .5rem .5rem .2rem rgba(20, 20, 20, 0.5),
+                    0 0 0 .1rem rgb(175, 174, 174) inset;
+    }
+    #formulario{
+        
+        input[type=text]{
+            border-style: solid 1px;
+            width: 100%;
+            padding-left: .5rem;
+            border-radius: .5rem;
+            &:focus{
+                background-color: rgba(117, 176, 179,.1);
+            }
+        }
+        input[type=submit]{
+            display: block;
+            margin-left: auto;
+            line-height: 2.5em;
+            color:white;
+            font-size: .7em;
+            text-transform: uppercase;
+            font-weight: 600;
+            background-image: linear-gradient(rgb(134, 32, 126),rgb(53, 51, 51));
+            border-radius: 2.5em;
+        }
+        li{
+            label{
+                em{
+                    font-size: .8em;
+                    color: red;
+                    font-weight: 700;
+                }
+            }
+            strong{
+                display: block;
+                padding-left: .5em;
+                line-height: 2em;
+                font-weight: 600;
+                font-size: .8em;
+                span{
+                    color: rgb(192, 83, 83);
+                }
+            }
+        }
+    }
+
+    .inventario{
+       
+        h2{
+            font-size: 1.2rem;
+            text-transform: uppercase;
+        }
+        .tabla_inventario{
+            width: 100%;
+            border-collapse: collapse;
+            thead,tfoot{
+                color: white;
+                font-variant: small-caps;
+                background-color: rgb(46, 43, 43);
+                
+            }
+            tbody{
+                tr:nth-child(even){
+                    background-color: rgb(222, 222, 228);
+                }
+                tr:nth-child(odd){
+                    background-color: rgb(242, 242, 247);
+                }
+            }
+        }
+    }
+}
