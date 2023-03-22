@@ -9,13 +9,13 @@
 
 1. Instalaciones:
 ```
-npm intall -D jest babel-jest @babel/preset-env
-npm intall -D @types/jest jest-environment-jsdom
+npm install -D jest babel-jest @babel/preset-env
+npm install -D @types/jest jest-environment-jsdom
 ```
 
 2. Opcional: Si usamos Fetch API en el proyecto:
 ```
-npm intall -D whatwg-fetch
+npm install -D whatwg-fetch
 ```
 
 3. Actualizar los scripts del __package.json__
