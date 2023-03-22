@@ -5,7 +5,7 @@
 
   Los enlaces que vienen abajo hacen referencia a __jest javascript__ y __react__. Selecciona las instalaciones que te hagan falta.
 
-## Vite
+## Instalaciones
 
 1. Instalaciones:
 ```
