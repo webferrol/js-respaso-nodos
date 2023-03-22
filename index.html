@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="#" type="image/x-icon">
     <title>Respaso de Nodos</title>
 </head>
 <body class="cuerpo">
@@ -16,11 +17,11 @@
                 <legend>Registro Producto</legend>
                 <ol class="campos">
                     <li class="campo">
-                        <label for="nombre"><input name="nombre" type="text" id="nombre" placeholder="Nombre del producto"></label>
+                        <label for="nombre"><input required name="nombre" type="text" id="nombre" placeholder="Nombre del producto"></label>
                         <strong>Sólo valores alfanuméricos</strong>
                     </li>
                     <li class="campo">
-                        <label for="precio"><input name="precio" type="text" id="precio" placeholder="Precio del producto"></label>
+                        <label for="precio"><input title="Formato no correcto" pattern="[ ]*[0-9]+(.[0-9]+)?[ ]*€?[ ]*" name="precio" type="text" id="precio" placeholder="Precio del producto"></label>
                         <strong>Formato correcto: <span>13.5€</span></strong>
                     </li>
                 </ol>
@@ -47,6 +48,6 @@
             </table>
         </section>
     </main>
-    <script type="module" src="js/script.js"></script>
+    <script type="module" src="/main.js"></script>
 </body>
 </html>
