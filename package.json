@@ -1,0 +1,32 @@
+{
+  "name": "repaso-nodos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "test": "jest --watchAll"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webferrol/js-respaso-nodos.git"
+  },
+  "keywords": [],
+  "author": "Xurxo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webferrol/js-respaso-nodos/issues"
+  },
+  "homepage": "https://github.com/webferrol/js-respaso-nodos#readme",
+  "devDependencies": {
+    "@babel/core": "^7.21.3",
+    "@babel/preset-env": "^7.20.2",
+    "@types/jest": "^29.5.0",
+    "babel-jest": "^29.5.0",
+    "jest": "^29.5.0",
+    "standard": "^17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "standard"
+  }
+}
